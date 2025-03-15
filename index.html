@@ -1,0 +1,114 @@
+<!DOCTYPE html> <!--Tipo de lenguaje que debe leer el navegador web (HTML5)-->
+<html lang="es"> <!--Idioma que reconocerá el navegador-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>Mi primer sitio web</title> <!--Título que lleva la página web-->
+</head>
+<body> <!--Contenido de la página-->
+    <h1>Mi primer sitio web en código</h1> <!--Texto título-->
+    <p>Este es un párrafo de ejemplo</p> <!--Párrafo-->
+
+    <div>
+        <p>Este es un párrafo dentro de un div</p>
+        <span>Este es un span dentro de un div</span>
+    </div>
+
+    <a href=""></a> <!--Enlace-->
+    <a href="https://sonic.fandom.com/es/wiki/Metal_Sonic"><img src="ms_bg.jpg" alt="Imagen de Metal Sonic. Hue hue hue hue hue" width="200" height="200"> </a><!--Imagen-->
+
+    <ol> <!--Lista ordenada-->
+        <li>Primer item - Batir</li>
+        <li>Cocinar</li>
+        <li>Comer</li>
+    </ol> <!--<li>texto</li> Dentro de esa etiqueta deberá ir un item para la lista.
+    Si quieres más items para un alista más de estas etiquetas deberás usar-->
+
+    <ul> <!--Lista desordenada-->
+        <li>Agua</li>
+        <li>Carne</li>
+        <li>Verduras</li>
+    </ul>
+
+    <!--Enlace Absoluto (ya existentes)-->
+    <a href="https://google.com">Prensa</a>
+
+    <!--Enlaces Relativos (archivos dentro de nuestro proyecto)-->
+    <a href="servicios.html">Ver servicios</a>
+
+    <!--Enlace Interno (dentro de la página) | El ID se crea con el símbolo # seguido del nombre de la seción-->
+    <a href="#testimonios">Testimonios</a>
+
+
+    <!--Al hacer clic en lo anterior, si se tiene mucho contenido en la página, automáticamente nos va a scrolear hacia donde se encuentra el ID-->
+    <section id="testimonios">
+	<p>Testimonios</p>
+    </section>
+
+    <!--Vídeos-->
+    <video src="video.mp4" controls></video>
+
+    <!--Audios-->
+    <audio src="audio.mp3" controls></audio>
+
+    <!--Tablas | Para organizarnos o para armar emails-->
+    <table> <!--Contedoras de la tabla-->
+        <tr> <!--Definen unas filas-->
+            <th>Nombre</th> <!--Los encabezados-->
+            <th>Ciudad</th>
+            <th>Edad</th>
+        </tr>
+        <tr>
+            <td>Elian</td> <!--Las celdas-->
+            <td>Barranquilla</td>
+            <td>16</td>
+        </tr>
+    </table>
+
+    <!--Formularios-->
+    <form action="/submit" method="post"> <!--Etiqueta contenedora-->
+        <label for="Nombre">Nombre:</label>
+        <input type="text" name="Nombre" id="Nombre">
+
+        <label for="Password">Contraseña:</label>
+        <input type="password" name="Password" id="Password">
+
+        <label for="Mensaje">Mensaje:</label>
+        <textarea name="Mensaje" id="Mensaje"></textarea>
+
+        <label for="genero">Género</label>
+        <input type="radio" name="" id="">
+        <label for="">Hombre</label>
+
+        <input type="radio" name="" id="">
+        <label for="">Mujer</label>
+
+        <input type="radio" name="" id="">
+        <label for="">Prefiero no decir</label>
+
+        <label for="suscribe">Suscribirse:</label>
+        <input type="checkbox" name="suscribe" id="suscribe">
+
+        <label for="pais">País:</label>
+        <select name="" id="">
+            <option value="">Argentina</option>
+            <option value="">Colombia</option>
+            <option value="">Uruguay</option>
+            <option value="">Paraguay</option>
+            <option value="">Brasil</option>
+        </select>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <div class="contenedor">
+        <div class="cajas" style="order: 3; flex-grow: 1;">1</div>
+        <div class="cajas" style="order: 1
+        ; flex-grow: 2;">2</div>
+        <div class="cajas" style="order: 2; flex-grow: 1;">3</div>
+    </div>
+</body>
+</html>

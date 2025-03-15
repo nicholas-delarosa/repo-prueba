@@ -1,0 +1,29 @@
+html {
+    background-color: black;
+    color: white;
+}
+
+.grid-container {
+    display: grid; /*Definimos grid*/
+    grid-template-columns: repeat(4, 1fr);/*Definir columnas | unidad de medida de fracción | "X"px, "X"fr (fr = fracción de la pantalla)*/
+    gap: 5px;
+    grid-template-rows: 100px 200px; /*Definir filas*/
+}
+
+.grid-item {
+    background-color: gray;
+    border: 1px solid whitesmoke;
+    padding: 20px;
+    text-align: center;
+}
+
+/*Ejemplo CoderHouse
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    justify-items: center;
+    align-items: start;
+    justify-content: space-between;
+    align-content: space-evenly;
+}*/
