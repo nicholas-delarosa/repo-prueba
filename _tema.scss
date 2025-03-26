@@ -1,0 +1,16 @@
+$theme: ligth;
+
+body {
+    @if $theme == ligth {
+        background-color: white;
+        color: black;
+    }
+    @else if $theme == dark {
+        background-color: black;
+        color: white;
+    }
+    @else {
+        background-color: gray;
+        color: white;
+    }
+}
