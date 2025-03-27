@@ -1,0 +1,74 @@
+.translate {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transform: translate(50px, 20px);
+}
+
+.rotate {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    transform: rotate(35deg);
+}
+
+.scale {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: scale(2, 1.5);
+}
+
+.skew {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    transform: skew(20deg, 10deg);
+}
+
+.boton {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    padding: 10px 20px;
+    transition: background-color 0.5 ease;
+}
+
+.boton:hover {
+    background-color: green;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: firebrick;
+    transition: width 0.5s ease, background-color 1s ease;
+}
+
+.box:hover {
+    width: 200px;
+    background-color: aquamarine;
+}
+
+.delay-box {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    transition: opacity 2s ease 1s;
+    opacity: 1;
+}
+
+.delay-box:hover {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: myanimation 2s infinite;
+}
+
+@keyframes myanimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
